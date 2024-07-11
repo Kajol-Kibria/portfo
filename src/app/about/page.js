@@ -1,6 +1,8 @@
 'use client'
 import React from 'react'
 import { motion } from "framer-motion";
+import { FiDownload } from "react-icons/fi";
+
 export default function page() {
   return (
     <div className='sm:w-[65%] w-[80%] mx-auto'>
@@ -34,6 +36,10 @@ export default function page() {
           <p className='py-3 text-md  text-gray-500 font-semibold'>Langages : <span className='text-gray-600 font-bold'>English, Hindi</span></p>
         </div>
         </div>
+       
+          <a href='./KAJOL_KIBRIA.pdf' download className='w-fit my-4 text-center group uppercase text-sm text-gray-600 flex gap-3 items-center py-2 px-4 border  border-yellow-500 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200 font-bold active:scale-90'>Download RESUME <FiDownload  className='text-yellow-500 group-hover:text-white  transition-all duration-200' size={18}/></a>
+          
+          
        
       </div>
       <div className='sm:w-[50%] sm:flex gap-10'>

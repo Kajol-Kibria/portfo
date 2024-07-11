@@ -10,7 +10,7 @@ import { IoArrowForwardCircle } from "react-icons/io5";
 
 export default function page() {
   return (
-    <div className='sm:w-[65%] w-[80%] mx-auto'>
+    <div className='sm:w-[65%] w-[80%] mx-auto sm:b-56'>
     <motion.div 
     initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}

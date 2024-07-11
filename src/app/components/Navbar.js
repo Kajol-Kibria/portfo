@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 import { LuMenu } from "react-icons/lu";
 import { CgClose } from "react-icons/cg";
 import { TiHome, TiUser } from "react-icons/ti";
-import { PiFacebookLogo, PiGithubLogo, PiInstagramLogo, PiLinkedinLogo, PiSuitcaseSimpleFill } from "react-icons/pi";
+import { PiSuitcaseSimpleFill } from "react-icons/pi";
+import { FaFacebookF, FaInstagram ,FaLinkedinIn, FaGithub  } from "react-icons/fa";
 
 import { TbMailFilled } from "react-icons/tb";
 import Link from 'next/link';
@@ -48,12 +49,12 @@ export default function Navbar() {
         </div>
         </Link>
         <div className='hidden sm:block'>
-        <div className='flex gap-8 text-xl'>
-            <a href='https://github.com/Kajol-Kibria'><PiGithubLogo/></a>
-            <a href='https://www.instagram.com/kajolkibria07/'><PiInstagramLogo/></a>
-            <a href='https://www.facebook.com/kajol.kibria.77'><PiFacebookLogo/></a>
-            <a href='https://www.linkedin.com/in/kajol-kibria-8b2004252/'><PiLinkedinLogo/></a>
-        </div>
+        <div className='flex gap-4 '>
+        <a className=' p-3  text-gray-600 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200' href='https://github.com/Kajol-Kibria'><FaGithub  size={20}/></a>
+        <a className=' p-3  text-gray-600 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200' href='https://www.facebook.com/kajol.kibria.77'><FaFacebookF  size={20}/></a>
+        <a className=' p-3  text-gray-600 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200' href='https://www.instagram.com/kajolkibria07/'><FaLinkedinIn  size={20}/></a>
+        <a className=' p-3 text-gray-600 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200' href='https://www.linkedin.com/in/kajol-kibria-8b2004252/'><FaInstagram  size={20}/></a>
+      </div>
       </div>
       </div>
       <div className=' z-[1000]  '>
