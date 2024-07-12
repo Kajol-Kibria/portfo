@@ -7,7 +7,7 @@ import { FaFacebookF, FaInstagram ,FaLinkedinIn, FaGithub  } from "react-icons/f
 import { RiSendPlaneFill } from "react-icons/ri";
 
 
-export default function page() {
+export default function Page() {
   const form = useRef();
 
 

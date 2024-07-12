@@ -62,7 +62,7 @@ export default function Navbar() {
         <div onClick={()=>setMenu(!menu)} className={`flex flex-col bg-orange-50 content-center top-0 bottom-0 right-0 left-0 fixed py-20 px-7 w-screen ${menu?"block":"hidden"}`}>
         {navArray.map(({name, path, icon})=>{
           return (
-            <Link className={`${pathName === path ? ' text-gray-600 font-semibold':""} flex items-center gap-4 text-2xl  text-gray-600 py-5 border-b`} href={path}>{icon}{name}</Link>
+            <Link key={name} className={`${pathName === path ? ' text-gray-600 font-semibold':""} flex items-center gap-4 text-2xl  text-gray-600 py-5 border-b`} href={path}>{icon}{name}</Link>
         )
            
           
@@ -75,7 +75,7 @@ export default function Navbar() {
       <div className='fixed flex flex-col gap-6 right-8 justify-center h-[100%] items-end py-1 px-1 bg-gray-10'>
         {navArray.map(({name, path, icon})=>{
           return (
-            <Link className={`group flex items-center text-2xl text-gray-600`} href={path}>
+            <Link  key={name} className={`group flex items-center text-2xl text-gray-600`} href={path}>
             <p className='h-[64px] content-center px-6  -right-32 group-hover:right-16 group-hover:rotate-0 rotate-90 fixed   transition-all duration-500 rounded-full'>{name}</p>
             <div className={`${pathName === path ? 'bg-yellow-500 text-white':""} py-3 px-3 rounded-full bg-gray-200 hover:bg-yellow-500  z-10 transition-all duration-500 group-hover:text-white`}>{icon}</div>
             </Link>
