@@ -5,9 +5,8 @@
 .clip-path{clip-path: polygon(0 0, 24% 0, 68% 100%, 0% 100%);}
 .bg-gra1{background: conic-gradient(#fcc203 310deg, #ededed 0deg ) ;}
 .bg-gra2{background: conic-gradient(#fcc203 290deg, #ededed 0deg ) ;}
-.bg-gra3{background: conic-gradient(#fcc203 260deg, #ededed 0deg ) ;}
-.bg-gra4{background: conic-gradient(#fcc203 280deg, #ededed 0deg ) ;}
-.bg-gra5{background: conic-gradient(#fcc203 300deg, #ededed 0deg ) ;}
+.bg-gra4{background: conic-gradient(#fcc203 250deg, #ededed 0deg ) ;}
+.bg-gra5{background: conic-gradient(#fcc203 275deg, #ededed 0deg ) ;}
 .bg-gra6{background: conic-gradient(#fcc203 310deg, #ededed 0deg ) ;}
 
 .shape{clip-path: polygon(51% 12%, 86% 51%, 82% 100%, 18% 100%, 0% 38%);}

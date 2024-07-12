@@ -30,19 +30,16 @@ export default function page() {
   return (
     <div className='sm:w-[65%] w-[80%] mx-auto sm:mb-80'>
     <motion.div 
-    initial={{ opacity: 0, scale: 0.5 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.5 }}
-    
-    >
-      
+    initial={{ opacity: 0, translateY: 50}}
+    animate={{ opacity: 1, translateY: 0}}
+    transition={{ duration: 0.5 }}>
     <div >
       <div className='mx-auto text-center'>
         <h1 className='sm:text-8xl text-5xl font-extrabold text-gray-200  sm:py-24  pt-24 '>CONTACT</h1>
         <h1 className=' sm:-translate-y-[168px] text-gray-700 sm:text-5xl text-2xl font-extrabold'>GET IN <span className='text-yellow-500'>TOUCH</span></h1>
       </div>
 </div>
-</motion.div>
+
 
 <div className='sm:flex gap-8'>
   <div className='sm:w-1/3'>
@@ -76,11 +73,12 @@ export default function page() {
         <input name="user_name"  type='text' placeholder='Your name' className='w-full border border-gray-400 py-3 pr-3 pl-5 outline-none focus:border-yellow-500 focus:placeholder-white  transition-all duration-200 rounded-full'/>
         <input name="user_email" type='email' placeholder='Your email' className='w-full border border-gray-400 py-3 pr-3 pl-5 outline-none focus:border-yellow-500 focus:placeholder-white transition-all duration-200 rounded-full'/>
       </div>
-      <textarea name="user_message" placeholder='Your subject' className='py-3 pr-3 pl-5 my-8 w-full h-44 border border-gray-400 outline-none focus:border-yellow-500 focus:placeholder-white transition-all duration-200 rounded-2xl '/>
+      <textarea name="user_message" placeholder='Your subject' className='py-3 pr-3 pl-5 my-8 w-full h-44 border border-gray-400 outline-none focus:border-yellow-500 focus:placeholder-white transition-all duration-200 rounded-3xl '/>
       <button type="submit" value="Send" className='group uppercase text-sm text-gray-600 flex gap-3 items-center py-2 px-4 border  border-yellow-500 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200 font-bold active:scale-90 mb-12'>send message <RiSendPlaneFill className='text-yellow-500 group-hover:text-white  transition-all duration-200' size={28}/></button>
   </form>
 </div>
 </div>
+</motion.div>
 </div>
   )
 }

@@ -7,8 +7,8 @@ export default function page() {
   return (
     <div className='sm:w-[65%] w-[80%] mx-auto'>
     <motion.div 
-    initial={{ opacity: 0, scale: 0.5 }}
-    animate={{ opacity: 1, scale: 1 }}
+    initial={{ opacity: 0, translateY: 50}}
+    animate={{ opacity: 1, translateY: 0}}
     transition={{ duration: 0.5 }}>
       <div className='w-[85%] mx-auto'>
       <div className='mx-auto text-center'>
@@ -16,7 +16,7 @@ export default function page() {
         <h1 className=' sm:-translate-y-[168px] text-gray-700 sm:text-5xl text-2xl font-extrabold pb-24 sm:pb-0'>ABOUT <span className='text-yellow-500'>ME</span></h1>
       </div>
       </div>
-    </motion.div>
+    
 
 
     <div className='sm:flex justify-between items-center'>
@@ -37,7 +37,7 @@ export default function page() {
         </div>
         </div>
        
-          <a href='./KAJOL_KIBRIA.pdf' download className='w-fit my-4 text-center group uppercase text-sm text-gray-600 flex gap-3 items-center py-2 px-4 border  border-yellow-500 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200 font-bold active:scale-90'>Download RESUME <FiDownload  className='text-yellow-500 group-hover:text-white  transition-all duration-200' size={18}/></a>
+          <a href='./KajolKibriaResume.pdf' download className='w-fit my-4 text-center group uppercase text-sm text-gray-600 flex gap-3 items-center py-2 px-4 border  border-yellow-500 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200 font-bold active:scale-90'>Download RESUME <FiDownload  className='text-yellow-500 group-hover:text-white  transition-all duration-200' size={18}/></a>
           
           
        
@@ -66,7 +66,8 @@ export default function page() {
       <div> <div className=' flex items-center justify-center w-32 h-32 rounded-full bg-gra1'>
       <div className='w-[80%] h-[80%] rounded-full bg-white content-center text-center text-gray-600 font-bold text-xl'>90%</div>
     </div>
-    <h1 className='text-center py-4 font-bold text-gray-600'>HTML & CSS</h1></div>
+    <h1 className='text-center py-4 font-bold text-gray-600'>HTML & CSS</h1>
+    </div>
       <div> <div className='flex items-center justify-center w-32 h-32 rounded-full bg-gra2'>
       <div className='w-[80%] h-[80%] rounded-full bg-white content-center text-center text-gray-600 font-bold text-xl'>80%</div>
     </div>
@@ -95,7 +96,7 @@ export default function page() {
     
     </div>
     </div>
-    
+    </motion.div>
     </div>
   )
 }

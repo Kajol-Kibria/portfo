@@ -44,7 +44,7 @@ export default function Navbar() {
       <div className='sm:px-40 px-8 py-5 absolute flex items-center justify-between w-[100%] '>
         <Link href='/'>
         <div className='flex gap-2 items-center'>
-          <Image src='/kk.png' alt='logo' width={40} height={20}/>
+          
           <h1 className='sm:text-2xl text-xl text-gray-700 font-bold'>KAJOL <span className='text-yellow-500'>KIBRIA</span></h1>
         </div>
         </Link>
@@ -52,8 +52,8 @@ export default function Navbar() {
         <div className='flex gap-4 '>
         <a className=' p-3  text-gray-600 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200' href='https://github.com/Kajol-Kibria'><FaGithub  size={20}/></a>
         <a className=' p-3  text-gray-600 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200' href='https://www.facebook.com/kajol.kibria.77'><FaFacebookF  size={20}/></a>
-        <a className=' p-3  text-gray-600 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200' href='https://www.instagram.com/kajolkibria07/'><FaLinkedinIn  size={20}/></a>
-        <a className=' p-3 text-gray-600 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200' href='https://www.linkedin.com/in/kajol-kibria-8b2004252/'><FaInstagram  size={20}/></a>
+        <a className=' p-3  text-gray-600 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200' href='https://www.linkedin.com/in/kajol-kibria-8b2004252/'><FaLinkedinIn  size={20}/></a>
+        <a className=' p-3 text-gray-600 rounded-full hover:text-white hover:bg-yellow-500 transition-all duration-200' href='https://www.instagram.com/kajolkibria07/'><FaInstagram  size={20}/></a>
       </div>
       </div>
       </div>
@@ -72,12 +72,12 @@ export default function Navbar() {
       <div>
         <div className='hidden sm:block z-50'>
           
-      <div className='fixed flex flex-col gap-4 right-14 justify-center h-[100%] items-end py-5 px-5 bg-gray-10'>
+      <div className='fixed flex flex-col gap-6 right-8 justify-center h-[100%] items-end py-1 px-1 bg-gray-10'>
         {navArray.map(({name, path, icon})=>{
           return (
             <Link className={`group flex items-center text-2xl text-gray-600`} href={path}>
-            <p className='h-[64px] content-center px-8  -right-32 group-hover:right-28 group-hover:rotate-0 rotate-90 fixed   transition-all duration-500 rounded-full'>{name}</p>
-            <div className={`${pathName === path ? 'bg-yellow-500 text-white':""} py-4 px-4 rounded-full bg-gray-200 hover:bg-yellow-500  z-10 transition-all duration-500 group-hover:text-white`}>{icon}</div>
+            <p className='h-[64px] content-center px-6  -right-32 group-hover:right-16 group-hover:rotate-0 rotate-90 fixed   transition-all duration-500 rounded-full'>{name}</p>
+            <div className={`${pathName === path ? 'bg-yellow-500 text-white':""} py-3 px-3 rounded-full bg-gray-200 hover:bg-yellow-500  z-10 transition-all duration-500 group-hover:text-white`}>{icon}</div>
             </Link>
         )
            
