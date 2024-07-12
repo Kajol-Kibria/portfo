@@ -9,7 +9,7 @@ import { IoArrowForwardOutline } from "react-icons/io5";
 export default function Hero() {
   return (
     <div className='w-full h-screen content-center sm:mb-20'>
-      <Image className='sm:hidden pb-10' src='/hero.jpg' alt='' height={1100}  width={1100}/>
+      <Image className='sm:hidden pb-10' src='/hero.jpg' alt='hero' height={1100}  width={1100}/>
     <div className='sm:w-[65%] w-[80%] mx-auto flex items-center justify-center my-auto'>
     <motion.div 
     initial={{ opacity: 0, translateX: -50}}
@@ -36,7 +36,7 @@ export default function Hero() {
     transition={{ duration: 0.5 }}>
       
        <div className='hidden sm:block'>
-        <Image src='/hero.jpg ' alt='' height={1100}  width={1100}/>
+        <Image src='/hero.jpg' alt='hero' height={1100}  width={1100}/>
       </div>
       </motion.div>
     </div>
