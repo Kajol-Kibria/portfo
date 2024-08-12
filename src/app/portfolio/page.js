@@ -25,6 +25,18 @@ export default function page() {
 
 <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 py-10 sm:py-0'>
 <div className='hover:scale-110 transition-all duration-300'>
+      <a href='https://fudo-kibria.vercel.app'>
+        <div className='sm:relative group'> 
+          <Image className='rounded-xl ' src='/Screenshot_6.png' alt='' height={400} width={400}/>
+        <div className='flex items-center justify-center rounded-xl group-hover:bg-yellow-500 sm:absolute h-full w-full -top-14 group-hover:top-0 transition-all duration-300 opacity-0 hover:opacity-100'>
+        <p className='flex items-center gap-1 text-xl font-bold text-gray-100 '>Visit <IoArrowForwardCircle className='group-hover:rotate-0 -rotate-90   transition-all duration-300 delay-500'/></p>
+        </div>
+        
+        </div>
+       
+        </a>
+      </div>
+<div className='hover:scale-110 transition-all duration-300'>
       <a href='https://cobalten.vercel.app'>
         <div className='sm:relative group'> 
           <Image className='rounded-xl ' src='/Screenshot_5.png' alt='' height={400} width={400}/>
